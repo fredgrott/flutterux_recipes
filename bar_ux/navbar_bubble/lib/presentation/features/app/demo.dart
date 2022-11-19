@@ -6,7 +6,7 @@
 // under MIT License and copyright 2019. See,
 // https://github.com/gskinnerTeam/flutter_vignettes
 
-// ignore_for_file: sized_box_for_whitespace, cast_nullable_to_non_nullable
+// ignore_for_file: sized_box_for_whitespace, cast_nullable_to_non_nullable, avoid_dynamic_calls
 
 import 'dart:math';
 
@@ -16,6 +16,7 @@ import 'package:navbar_bubble/presentation/features/gallery/gallery_page.dart';
 import 'package:navbar_bubble/presentation/features/home/home_page.dart';
 import 'package:navbar_bubble/presentation/features/likes/likes_page.dart';
 import 'package:navbar_bubble/presentation/features/save/save_page.dart';
+
 import 'package:navbar_bubble/presentation/widgets/navbar.dart';
 
 class BubbleTabBarDemo extends StatefulWidget {
@@ -26,11 +27,16 @@ class BubbleTabBarDemo extends StatefulWidget {
 class _BubbleTabBarDemoState extends State<BubbleTabBarDemo> {
   List<NavBarItemData>? _navBarItems;
   int _selectedNavIndex = 0;
+  
 
   List<Widget>? _viewsByIndex;
 
   @override
   Widget build(BuildContext context) {
+    
+
+
+
     // Create custom navBar, pass in a list of buttons, and listen for tap event.
     final navBar = NavBar(
       items: _navBarItems,
@@ -61,37 +67,37 @@ class _BubbleTabBarDemoState extends State<BubbleTabBarDemo> {
 
   @override
   void initState() {
+    
     // Declare some buttons for our tab bar.
     _navBarItems = [
       NavBarItemData(
         "Home",
         Icons.home,
         110,
-        const Color(0xff01b87d),
+        
       ),
       NavBarItemData(
         "Gallery",
         Icons.image,
         110,
-        const Color(0xff594ccf),
       ),
       NavBarItemData(
         "Camera",
         Icons.camera,
         115,
-        const Color(0xff09a8d9),
+        
       ),
       NavBarItemData(
         "Likes",
         Icons.favorite,
         100,
-        const Color(0xffcf4c7a),
+        
       ),
       NavBarItemData(
         "Saved",
         Icons.save,
         105,
-        const Color(0xfff2873f),
+        
       ),
     ];
 
