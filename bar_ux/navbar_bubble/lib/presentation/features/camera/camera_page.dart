@@ -13,24 +13,27 @@ class CameraPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    double fabSize = 90;
-    //Main list content
+    const double fabSize = 90;
+
+    // Main list content.
     return Container(
       alignment: Alignment.bottomCenter,
       color: Colors.black,
-      padding: EdgeInsets.only(bottom: 32),
+      padding: const EdgeInsets.only(bottom: 32),
       // Create a floating action button (FAB), with a circle inside of it
       // To size a FAB, nest it in a Container, wrapped in a SizedBox
-      child: Container(
+      child: SizedBox(
         width: fabSize,
         height: fabSize,
         child: SizedBox(
           child: FloatingActionButton(
+            //
+            // ignore: no-empty-block
             onPressed: () {},
-            //Create circle inside our FAB
+            // Create circle inside our FAB.
             child: Container(
-              margin: EdgeInsets.all(8),
-              decoration: BoxDecoration(
+              margin: const EdgeInsets.all(8),
+              decoration: const BoxDecoration(
                 color: Colors.white30,
                 shape: BoxShape.circle,
               ),

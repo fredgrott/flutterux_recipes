@@ -33,7 +33,7 @@ dependencies:
     sdk: flutter
   google_fonts: ^3.0.1
   material_color_utilities: ^0.2.0
-  flex_color_scheme: ^6.0.1
+  flex_color_scheme: ^6.1.1
   dynamic_color: ^1.5.4
   
 

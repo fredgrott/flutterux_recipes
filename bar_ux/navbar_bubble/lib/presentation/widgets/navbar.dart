@@ -64,8 +64,9 @@ class NavBar extends StatelessWidget {
 class NavBarItemData {
   final String title;
   final IconData icon;
-  
+  final Color selectedColor;
+
   final double width;
 
-  NavBarItemData(this.title, this.icon, this.width,);
+  NavBarItemData(this.title, this.icon, this.width, this.selectedColor,);
 }

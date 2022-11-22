@@ -16,6 +16,7 @@ import 'package:navbar_bubble/presentation/features/gallery/gallery_page.dart';
 import 'package:navbar_bubble/presentation/features/home/home_page.dart';
 import 'package:navbar_bubble/presentation/features/likes/likes_page.dart';
 import 'package:navbar_bubble/presentation/features/save/save_page.dart';
+import 'package:navbar_bubble/presentation/themes/semantic_colors.dart';
 
 import 'package:navbar_bubble/presentation/widgets/navbar.dart';
 
@@ -25,24 +26,16 @@ class BubbleTabBarDemo extends StatefulWidget {
 }
 
 class _BubbleTabBarDemoState extends State<BubbleTabBarDemo> {
-  List<NavBarItemData>? _navBarItems;
-  int _selectedNavIndex = 0;
   
+  int _selectedNavIndex = 0;
 
   List<Widget>? _viewsByIndex;
 
   @override
   Widget build(BuildContext context) {
+    final SemanticColors? mySemantic = Theme.of(context).extension<SemanticColors>();
+
     
-
-
-
-    // Create custom navBar, pass in a list of buttons, and listen for tap event.
-    final navBar = NavBar(
-      items: _navBarItems,
-      itemTapped: _handleNavBtnTapped,
-      currentIndex: _selectedNavIndex,
-    );
     // Display the correct child view for the current index.
     final contentView =
         _viewsByIndex?[min(_selectedNavIndex, (_viewsByIndex?.length)! - 1)];
@@ -61,45 +54,49 @@ class _BubbleTabBarDemoState extends State<BubbleTabBarDemo> {
           ),
         ),
       ),
-      bottomNavigationBar: navBar, // Pass our custom navBar into the scaffold.
+      bottomNavigationBar: NavBar(
+        items: [
+          NavBarItemData(
+            "Home",
+            Icons.home,
+            110,
+            mySemantic?.appSemanticOne as Color,
+          ),
+          NavBarItemData(
+            "Gallery",
+            Icons.image,
+            110,
+            mySemantic?.appSemanticTwo as Color,
+          ),
+          NavBarItemData(
+            "Camera",
+            Icons.camera,
+            115,
+            mySemantic?.appSemanticThree as Color,
+          ),
+          NavBarItemData(
+            "Likes",
+            Icons.favorite,
+            100,
+            mySemantic?.appSemanticFour as Color,
+          ),
+          NavBarItemData(
+            "Saved",
+            Icons.save,
+            105,
+            mySemantic?.appSemanticFive as Color,
+          ),
+
+        ],
+        itemTapped: _handleNavBtnTapped,
+        currentIndex: _selectedNavIndex,
+      ), // Pass our custom navBar into the scaffold.
     );
   }
 
   @override
   void initState() {
     
-    // Declare some buttons for our tab bar.
-    _navBarItems = [
-      NavBarItemData(
-        "Home",
-        Icons.home,
-        110,
-        
-      ),
-      NavBarItemData(
-        "Gallery",
-        Icons.image,
-        110,
-      ),
-      NavBarItemData(
-        "Camera",
-        Icons.camera,
-        115,
-        
-      ),
-      NavBarItemData(
-        "Likes",
-        Icons.favorite,
-        100,
-        
-      ),
-      NavBarItemData(
-        "Saved",
-        Icons.save,
-        105,
-        
-      ),
-    ];
 
     // Create the views which will be mapped to the indices for our nav btns.
     _viewsByIndex = <Widget>[

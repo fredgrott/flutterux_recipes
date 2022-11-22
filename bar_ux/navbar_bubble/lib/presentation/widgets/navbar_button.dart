@@ -92,7 +92,8 @@ class _NavbarButtonState extends State<NavbarButton>
           duration: Duration(milliseconds: (700 / _animScale).round()),
           // Use BoxDecoration top create a rounded container.
           decoration: BoxDecoration(
-            color: widget.isSelected ? Theme.of(context).colorScheme.primary : Theme.of(context).colorScheme.surfaceVariant,
+            color: widget.isSelected ? widget.data.selectedColor : Colors.white,
+
             borderRadius: const BorderRadius.all(Radius.circular(24)),
           ),
           // Wrap the row in a ClippedView to suppress any overflow errors if we momentarily exceed the screen size.
