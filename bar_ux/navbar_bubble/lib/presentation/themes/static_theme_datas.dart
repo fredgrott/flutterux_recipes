@@ -6,7 +6,7 @@
 
 import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/material.dart';
-import 'package:navbar_bubble/presentation/themes/app_colors.dart';
+
 import 'package:navbar_bubble/presentation/themes/app_custom_flex_tones.dart';
 import 'package:navbar_bubble/presentation/themes/app_flex_keys.dart';
 import 'package:navbar_bubble/presentation/themes/app_flex_sub_theme_datas.dart';
@@ -15,37 +15,57 @@ import 'package:navbar_bubble/presentation/themes/semantic_colors.dart';
 import 'package:navbar_bubble/presentation/themes/static_seed_color_schemes.dart';
 
 
-final SemanticColors mySemanticColorsLight = SemanticColors(
-  appSemanticOne: homeSemanticSrc,
-  appSemanticTwo: gallerySemanticSrc,
-  appSemanticThree: cameraSemanticSrc,
-  appSemanticFour: likesSemanticSrc,
-  appSemanticFive: savedSemanticSrc,
+final ExtraSemanticColors mySemanticColorsLight = ExtraSemanticColors(
+  appExtraSemanticOne: lightExtraSemanticOneStaticSeedColorScheme.primary,
+  appExtraSemanticContainerOne: lightExtraSemanticOneStaticSeedColorScheme.primaryContainer ,
+  appExtraSemanticTwo: lightExtraSemanticTwoStaticSeedColorScheme.primary,
+  appExtraSemanticContainerTwo: lightExtraSemanticTwoStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticThree: lightExtraSemanticThreeStaticSeedColorScheme.primary,
+  appExtraSemanticContainerThree: lightExtraSemanticThreeStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticFour: lightExtraSemanticFourStaticSeedColorScheme.primary,
+  appExtraSemanticContainerFour: lightExtraSemanticFourStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticFive: lightExtraSemanticFiveStaticSeedColorScheme.primary,
+  appExtraSemanticContainerFive: lightExtraSemanticFiveStaticSeedColorScheme.primaryContainer,
 );
 //
 // ignore: prefer-correct-identifier-length
-final SemanticColors mySemanticColorsLightHighContrast = SemanticColors(
-  appSemanticOne: homeSemanticSrc,
-  appSemanticTwo: gallerySemanticSrc,
-  appSemanticThree: cameraSemanticSrc,
-  appSemanticFour: likesSemanticSrc,
-  appSemanticFive: savedSemanticSrc,
+final ExtraSemanticColors mySemanticColorsLightHighContrast = ExtraSemanticColors(
+  appExtraSemanticOne: lighthighcontrastExtraSemanticOneStaticSeedColorScheme.primary,
+  appExtraSemanticContainerOne: lighthighcontrastExtraSemanticOneStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticTwo: lighthighcontrastExtraSemanticTwoStaticSeedColorScheme.primary,
+  appExtraSemanticContainerTwo: lighthighcontrastExtraSemanticTwoStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticThree: lighthighcontrastExtraSemanticThreeStaticSeedColorScheme.primary,
+  appExtraSemanticContainerThree: lighthighcontrastExtraSemanticThreeStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticFour: lighthighcontrastExtraSemanticFourStaticSeedColorScheme.primary,
+  appExtraSemanticContainerFour: lighthighcontrastExtraSemanticFourStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticFive: lighthighcontrastExtraSemanticFiveStaticSeedColorScheme.primary,
+  appExtraSemanticContainerFive: lighthighcontrastExtraSemanticFiveStaticSeedColorScheme.primaryContainer,
 );
-final SemanticColors mySemanticColorsDark = SemanticColors(
-  appSemanticOne: homeSemanticSrc,
-  appSemanticTwo: gallerySemanticSrc,
-  appSemanticThree: cameraSemanticSrc,
-  appSemanticFour: likesSemanticSrc,
-  appSemanticFive: savedSemanticSrc,
+final ExtraSemanticColors mySemanticColorsDark = ExtraSemanticColors(
+  appExtraSemanticOne: darkExtraSemanticOneStaticSeedColorScheme.primary,
+  appExtraSemanticContainerOne: darkExtraSemanticOneStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticTwo: darkExtraSemanticTwoStaticSeedColorScheme.primary,
+  appExtraSemanticContainerTwo: darkExtraSemanticTwoStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticThree: darkExtraSemanticThreeStaticSeedColorScheme.primary,
+  appExtraSemanticContainerThree: darkExtraSemanticThreeStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticFour: darkExtraSemanticFourStaticSeedColorScheme.primary,
+  appExtraSemanticContainerFour: darkExtraSemanticFourStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticFive: darkExtraSemanticFiveStaticSeedColorScheme.primary,
+  appExtraSemanticContainerFive: darkExtraSemanticFiveStaticSeedColorScheme.primaryContainer,
 );
 //
 // ignore: prefer-correct-identifier-length
-final SemanticColors mySemanticColorsDarkHighContrast = SemanticColors(
-  appSemanticOne: homeSemanticSrc,
-  appSemanticTwo: gallerySemanticSrc,
-  appSemanticThree: cameraSemanticSrc,
-  appSemanticFour: likesSemanticSrc,
-  appSemanticFive: savedSemanticSrc,
+final ExtraSemanticColors mySemanticColorsDarkHighContrast = ExtraSemanticColors(
+  appExtraSemanticOne: darkhighcontrastExtraSemanticOneStaticSeedColorScheme.primary,
+  appExtraSemanticContainerOne: darkhighcontrastExtraSemanticOneStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticTwo: darkhighcontrastExtraSemanticTwoStaticSeedColorScheme.primary,
+  appExtraSemanticContainerTwo: darkhighcontrastExtraSemanticTwoStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticThree: darkhighcontrastExtraSemanticThreeStaticSeedColorScheme.primary,
+  appExtraSemanticContainerThree: darkhighcontrastExtraSemanticThreeStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticFour: darkhighcontrastExtraSemanticFourStaticSeedColorScheme.primary,
+  appExtraSemanticContainerFour: darkhighcontrastExtraSemanticFourStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticFive: darkhighcontrastExtraSemanticFiveStaticSeedColorScheme.primary,
+  appExtraSemanticContainerFive: darkhighcontrastExtraSemanticFiveStaticSeedColorScheme.primaryContainer,
 );
 
 final FlexColorScheme lightStaticFlexColorScheme = FlexColorScheme.light(

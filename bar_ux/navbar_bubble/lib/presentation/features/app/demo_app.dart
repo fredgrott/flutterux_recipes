@@ -4,10 +4,12 @@
 
 // ignore_for_file: avoid_redundant_argument_values
 
+
 import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/material.dart';
 import 'package:navbar_bubble/presentation/features/app/demo.dart';
+
 
 import 'package:navbar_bubble/presentation/themes/app_colors.dart';
 import 'package:navbar_bubble/presentation/themes/app_custom_flex_tones.dart';
@@ -19,37 +21,57 @@ import 'package:navbar_bubble/presentation/themes/semantic_colors.dart';
 import 'package:navbar_bubble/presentation/themes/static_seed_color_schemes.dart';
 import 'package:navbar_bubble/presentation/themes/static_theme_datas.dart';
 
-SemanticColors _mySemanticColorsLight = SemanticColors(
-  appSemanticOne: homeSemanticSrc,
-  appSemanticTwo: gallerySemanticSrc,
-  appSemanticThree: cameraSemanticSrc,
-  appSemanticFour: likesSemanticSrc,
-  appSemanticFive: savedSemanticSrc,
+ExtraSemanticColors _mySemanticColorsLight = ExtraSemanticColors(
+  appExtraSemanticOne: lightExtraSemanticOneStaticSeedColorScheme.primary,
+  appExtraSemanticContainerOne: lightExtraSemanticOneStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticTwo: lightExtraSemanticTwoStaticSeedColorScheme.primary,
+  appExtraSemanticContainerTwo: lightExtraSemanticTwoStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticThree: lightExtraSemanticThreeStaticSeedColorScheme.primary,
+  appExtraSemanticContainerThree: lightExtraSemanticThreeStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticFour: lightExtraSemanticFourStaticSeedColorScheme.primary,
+  appExtraSemanticContainerFour: lightExtraSemanticFourStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticFive: lightExtraSemanticFiveStaticSeedColorScheme.primary,
+  appExtraSemanticContainerFive: lightExtraSemanticFiveStaticSeedColorScheme.primaryContainer,
 );
 //
 // ignore: prefer-correct-identifier-length
-SemanticColors _mySemanticColorsLightHighContrast = SemanticColors(
-  appSemanticOne: homeSemanticSrc,
-  appSemanticTwo: gallerySemanticSrc,
-  appSemanticThree: cameraSemanticSrc,
-  appSemanticFour: likesSemanticSrc,
-  appSemanticFive: savedSemanticSrc,
+ExtraSemanticColors _mySemanticColorsLightHighContrast = ExtraSemanticColors(
+  appExtraSemanticOne: lighthighcontrastExtraSemanticOneStaticSeedColorScheme.primary,
+  appExtraSemanticContainerOne: lighthighcontrastExtraSemanticOneStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticTwo: lighthighcontrastExtraSemanticTwoStaticSeedColorScheme.primary,
+  appExtraSemanticContainerTwo: lighthighcontrastExtraSemanticTwoStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticThree: lighthighcontrastExtraSemanticThreeStaticSeedColorScheme.primary,
+  appExtraSemanticContainerThree: lighthighcontrastExtraSemanticThreeStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticFour: lighthighcontrastExtraSemanticFourStaticSeedColorScheme.primary,
+  appExtraSemanticContainerFour: lighthighcontrastExtraSemanticFourStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticFive: lighthighcontrastExtraSemanticFiveStaticSeedColorScheme.primary,
+  appExtraSemanticContainerFive: lighthighcontrastExtraSemanticFiveStaticSeedColorScheme.primaryContainer,
 );
-SemanticColors _mySemanticColorsDark = SemanticColors(
-  appSemanticOne: homeSemanticSrc,
-  appSemanticTwo: gallerySemanticSrc,
-  appSemanticThree: cameraSemanticSrc,
-  appSemanticFour: likesSemanticSrc,
-  appSemanticFive: savedSemanticSrc,
+ExtraSemanticColors _mySemanticColorsDark = ExtraSemanticColors(
+  appExtraSemanticOne: darkExtraSemanticOneStaticSeedColorScheme.primary,
+  appExtraSemanticContainerOne: darkExtraSemanticOneStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticTwo: darkExtraSemanticTwoStaticSeedColorScheme.primary,
+  appExtraSemanticContainerTwo: darkExtraSemanticTwoStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticThree: darkExtraSemanticThreeStaticSeedColorScheme.primary,
+  appExtraSemanticContainerThree: darkExtraSemanticThreeStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticFour: darkExtraSemanticFourStaticSeedColorScheme.primary,
+  appExtraSemanticContainerFour: darkExtraSemanticFourStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticFive: darkExtraSemanticFiveStaticSeedColorScheme.primary,
+  appExtraSemanticContainerFive: darkExtraSemanticFiveStaticSeedColorScheme.primaryContainer,
 );
 //
 // ignore: prefer-correct-identifier-length
-SemanticColors _mySemanticColorsDarkHighContrast = SemanticColors(
-  appSemanticOne: homeSemanticSrc,
-  appSemanticTwo: gallerySemanticSrc,
-  appSemanticThree: cameraSemanticSrc,
-  appSemanticFour: likesSemanticSrc,
-  appSemanticFive: savedSemanticSrc,
+ExtraSemanticColors _mySemanticColorsDarkHighContrast = ExtraSemanticColors(
+  appExtraSemanticOne: darkhighcontrastExtraSemanticOneStaticSeedColorScheme.primary,
+  appExtraSemanticContainerOne: darkhighcontrastExtraSemanticOneStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticTwo: darkhighcontrastExtraSemanticTwoStaticSeedColorScheme.primary,
+  appExtraSemanticContainerTwo: darkhighcontrastExtraSemanticTwoStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticThree: darkhighcontrastExtraSemanticThreeStaticSeedColorScheme.primary,
+  appExtraSemanticContainerThree: darkhighcontrastExtraSemanticThreeStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticFour: darkhighcontrastExtraSemanticFourStaticSeedColorScheme.primary,
+  appExtraSemanticContainerFour: darkhighcontrastExtraSemanticFourStaticSeedColorScheme.primaryContainer,
+  appExtraSemanticFive: darkhighcontrastExtraSemanticFiveStaticSeedColorScheme.primary,
+  appExtraSemanticContainerFive: darkhighcontrastExtraSemanticFiveStaticSeedColorScheme.primaryContainer,
 );
 
 class DemoApp extends StatelessWidget {
@@ -85,6 +107,17 @@ class DemoApp extends StatelessWidget {
         ThemeData derivedDarkHighContrastThemeData;
         ThemeData derivedDarkThemeData;
 
+        // Note that the dynamic color package example has this wrong
+        // as the Dynamic Color Builder and my custom one only 
+        // primary shit per user input color the semantic colors of 
+        // error, onError, errorContainer, and onErrorContainer.
+        // Thus, we need to insert back in the non-semantic 
+        //  colors from our original color scheme.
+        //
+        // Need to leave enough color change beyond the error semantic 
+        // coolors. For example in two color brands we would keep the
+        // changed tertiary as UI color change would show app 
+        // user that the app responded to their wallpaper or accent color choice.
         if (lightDynamic != null &&
             darkDynamic != null &&
             lightHighContrastDynamic != null &&
@@ -101,6 +134,27 @@ class DemoApp extends StatelessWidget {
             onPrimary: lightStaticSeedColorScheme.onPrimary,
             onPrimaryContainer: lightStaticSeedColorScheme.primaryContainer,
             inversePrimary: lightStaticSeedColorScheme.inversePrimary,
+            secondary: lightStaticSeedColorScheme.secondary,
+            secondaryContainer: lightStaticSeedColorScheme.secondaryContainer,
+            onSecondary: lightStaticSeedColorScheme.onSecondary,
+            onSecondaryContainer: lightStaticSeedColorScheme.onSecondaryContainer,
+            scrim: lightStaticSeedColorScheme.scrim,
+            shadow: lightStaticSeedColorScheme.shadow,
+            tertiary: lightStaticSeedColorScheme.tertiary,
+            tertiaryContainer: lightStaticSeedColorScheme.tertiaryContainer,
+            onTertiary: lightStaticSeedColorScheme.onTertiary,
+            onTertiaryContainer: lightStaticSeedColorScheme.onTertiaryContainer,
+            surfaceTint: lightStaticSeedColorScheme.surfaceTint,
+            surface: lightStaticSeedColorScheme.surface,
+            onSurface: lightStaticSeedColorScheme.onSurface,
+            surfaceVariant: lightStaticSeedColorScheme.surfaceVariant,
+            onSurfaceVariant: lightStaticSeedColorScheme.onSurfaceVariant,
+            inverseSurface: lightStaticSeedColorScheme.inverseSurface,
+            onInverseSurface: lightStaticSeedColorScheme.onInverseSurface,
+            onBackground: lightStaticSeedColorScheme.onBackground,
+            background: lightStaticSeedColorScheme.background,
+            outline: lightStaticSeedColorScheme.outline,
+            outlineVariant: lightStaticSeedColorScheme.outlineVariant,
           );
           lightHighContrastColorScheme = lightHighContrastColorScheme.copyWith(
             primary: lighthighcontrastStaticSeedColorScheme.primary,
@@ -108,6 +162,32 @@ class DemoApp extends StatelessWidget {
             onPrimary: lighthighcontrastStaticSeedColorScheme.onPrimary,
             onPrimaryContainer: lighthighcontrastStaticSeedColorScheme.primaryContainer,
             inversePrimary: lighthighcontrastStaticSeedColorScheme.inversePrimary,
+            secondary: lighthighcontrastStaticSeedColorScheme.secondary,
+            secondaryContainer: lighthighcontrastStaticSeedColorScheme.secondaryContainer,
+            onSecondary: lighthighcontrastStaticSeedColorScheme.onSecondary,
+            onSecondaryContainer: lighthighcontrastStaticSeedColorScheme.onSecondaryContainer,
+            scrim: lighthighcontrastStaticSeedColorScheme.scrim,
+            shadow: lighthighcontrastStaticSeedColorScheme.shadow,
+            surface: lighthighcontrastStaticSeedColorScheme.surface,
+            surfaceVariant: lighthighcontrastStaticSeedColorScheme.surfaceVariant,
+            onSurface: lighthighcontrastStaticSeedColorScheme.surfaceVariant,
+            inverseSurface: lighthighcontrastStaticSeedColorScheme.inverseSurface,
+            onInverseSurface: lighthighcontrastStaticSeedColorScheme.onInverseSurface,
+            onSurfaceVariant: lighthighcontrastStaticSeedColorScheme.onSurfaceVariant,
+            surfaceTint: lighthighcontrastStaticSeedColorScheme.surfaceTint,
+            tertiary: lightStaticSeedColorScheme.tertiary,
+            tertiaryContainer: lightStaticSeedColorScheme.tertiaryContainer,
+            onTertiary: lightStaticSeedColorScheme.onTertiary,
+            onTertiaryContainer: lightStaticSeedColorScheme.onTertiaryContainer,
+            onBackground: lighthighcontrastStaticSeedColorScheme.onBackground,
+            background: lighthighcontrastStaticSeedColorScheme.background,
+            outline: lighthighcontrastStaticSeedColorScheme.outline,
+            outlineVariant: lighthighcontrastStaticSeedColorScheme.outlineVariant,
+
+
+
+
+
           );
           darkColorScheme = darkColorScheme.copyWith(
             primary: darkStaticSeedColorScheme.primary,
@@ -115,6 +195,27 @@ class DemoApp extends StatelessWidget {
             onPrimary: darkStaticSeedColorScheme.onPrimary,
             onPrimaryContainer: darkStaticSeedColorScheme.primaryContainer,
             inversePrimary: darkStaticSeedColorScheme.inversePrimary,
+            secondary: darkStaticSeedColorScheme.secondary,
+            secondaryContainer: darkStaticSeedColorScheme.secondaryContainer,
+            onSecondary: darkStaticSeedColorScheme.onSecondary,
+            onSecondaryContainer: darkStaticSeedColorScheme.onSecondaryContainer,
+            scrim: darkStaticSeedColorScheme.scrim,
+            shadow: darkStaticSeedColorScheme.shadow,
+            surface: darkStaticSeedColorScheme.surface,
+            onSurface: darkStaticSeedColorScheme.onSurface,
+            surfaceVariant: darkStaticSeedColorScheme.surfaceVariant,
+            onSurfaceVariant: darkStaticSeedColorScheme.onSurfaceVariant,
+            inverseSurface: darkStaticSeedColorScheme.inverseSurface,
+            onInverseSurface: darkStaticSeedColorScheme.onInverseSurface,
+            surfaceTint: darkStaticSeedColorScheme.surfaceTint,
+            tertiary: darkStaticSeedColorScheme.tertiary,
+            tertiaryContainer: darkStaticSeedColorScheme.tertiaryContainer,
+            onTertiary: darkStaticSeedColorScheme.onTertiary,
+            onTertiaryContainer: darkStaticSeedColorScheme.onTertiaryContainer,
+            onBackground: darkStaticSeedColorScheme.onBackground,
+            background: darkStaticSeedColorScheme.background,
+            outline: darkStaticSeedColorScheme.outline,
+            outlineVariant: darkStaticSeedColorScheme.outlineVariant,
           );
           darkHighContrastColorScheme = darkHighContrastColorScheme.copyWith(
             primary: darkhighcontrastStaticSeedColorScheme.primary,
@@ -122,16 +223,39 @@ class DemoApp extends StatelessWidget {
             onPrimary: darkhighcontrastStaticSeedColorScheme.onPrimary,
             onPrimaryContainer: darkhighcontrastStaticSeedColorScheme.primaryContainer,
             inversePrimary: darkhighcontrastStaticSeedColorScheme.inversePrimary,
+            secondary: darkhighcontrastStaticSeedColorScheme.secondary,
+            secondaryContainer: darkhighcontrastStaticSeedColorScheme.secondaryContainer,
+            onSecondary: darkhighcontrastStaticSeedColorScheme.onSecondary,
+            onSecondaryContainer: darkhighcontrastStaticSeedColorScheme.onSecondaryContainer,
+            scrim: darkhighcontrastStaticSeedColorScheme.scrim,
+            shadow: darkhighcontrastStaticSeedColorScheme.shadow,
+            surface: darkhighcontrastStaticSeedColorScheme.surface,
+            onSurface: darkhighcontrastStaticSeedColorScheme.onSurface,
+            surfaceVariant: darkhighcontrastStaticSeedColorScheme.surfaceVariant,
+            onSurfaceVariant: darkhighcontrastStaticSeedColorScheme.onSurfaceVariant,
+            inverseSurface: darkhighcontrastStaticSeedColorScheme.inverseSurface,
+            onInverseSurface: darkhighcontrastStaticSeedColorScheme.onInverseSurface,
+            surfaceTint: darkhighcontrastStaticSeedColorScheme.surfaceTint,
+            tertiary: darkhighcontrastStaticSeedColorScheme.tertiary,
+            tertiaryContainer: darkhighcontrastStaticSeedColorScheme.tertiaryContainer,
+            onTertiary: darkhighcontrastStaticSeedColorScheme.onTertiary,
+            onTertiaryContainer: darkhighcontrastStaticSeedColorScheme.onTertiaryContainer,
+            onBackground: darkhighcontrastStaticSeedColorScheme.onBackground,
+            background: darkhighcontrastStaticSeedColorScheme.background,
+            outline: darkhighcontrastStaticSeedColorScheme.outline,
+            outlineVariant: darkhighcontrastStaticSeedColorScheme.outlineVariant,
+
+
           );
 
           _mySemanticColorsLight =
-              _mySemanticColorsLight.harmonized(lightDynamic);
+              _mySemanticColorsLight.harmonizedExtraSemanticColors(lightDynamic);
           _mySemanticColorsLightHighContrast =
               _mySemanticColorsLightHighContrast
-                  .harmonized(lightHighContrastDynamic);
-          _mySemanticColorsDark = _mySemanticColorsDark.harmonized(darkDynamic);
+                  .harmonizedExtraSemanticColors(lightHighContrastDynamic);
+          _mySemanticColorsDark = _mySemanticColorsDark.harmonizedExtraSemanticColors(darkDynamic);
           _mySemanticColorsDarkHighContrast = _mySemanticColorsDarkHighContrast
-              .harmonized(darkHighContrastDynamic);
+              .harmonizedExtraSemanticColors(darkHighContrastDynamic);
 
           derivedLightFlexColorScheme = FlexColorScheme.light(
             colorScheme: lightColorScheme,

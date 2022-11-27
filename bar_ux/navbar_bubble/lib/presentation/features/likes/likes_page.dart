@@ -23,7 +23,9 @@ class LikesPage extends StatelessWidget {
         ) {
           return Container(
             padding: const EdgeInsets.all(12),
-            child: const PlaceholderCardShort(),
+            child: const PlaceholderCardShort(
+              
+            ),
           );
         },
       ),

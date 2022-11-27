@@ -33,7 +33,7 @@ class _BubbleTabBarDemoState extends State<BubbleTabBarDemo> {
 
   @override
   Widget build(BuildContext context) {
-    final SemanticColors? mySemantic = Theme.of(context).extension<SemanticColors>();
+    final ExtraSemanticColors? mySemantic = Theme.of(context).extension<ExtraSemanticColors>();
 
     
     // Display the correct child view for the current index.
@@ -60,31 +60,31 @@ class _BubbleTabBarDemoState extends State<BubbleTabBarDemo> {
             "Home",
             Icons.home,
             110,
-            mySemantic?.appSemanticOne as Color,
+            mySemantic?.appExtraSemanticOne as Color,
           ),
           NavBarItemData(
             "Gallery",
             Icons.image,
             110,
-            mySemantic?.appSemanticTwo as Color,
+            mySemantic?.appExtraSemanticTwo as Color,
           ),
           NavBarItemData(
             "Camera",
             Icons.camera,
             115,
-            mySemantic?.appSemanticThree as Color,
+            mySemantic?.appExtraSemanticThree as Color,
           ),
           NavBarItemData(
             "Likes",
             Icons.favorite,
             100,
-            mySemantic?.appSemanticFour as Color,
+            mySemantic?.appExtraSemanticFour as Color,
           ),
           NavBarItemData(
             "Saved",
             Icons.save,
             105,
-            mySemantic?.appSemanticFive as Color,
+            mySemantic?.appExtraSemanticFive as Color,
           ),
 
         ],

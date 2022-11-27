@@ -22,8 +22,12 @@ class GalleryPage extends StatelessWidget {
         crossAxisCount: columnCount,
         children: List.generate(
           20,
+          //
+          // ignore: prefer-extracting-callbacks
           (index) {
-            return const PlaceholderImage();
+            return const PlaceholderImage(
+              
+            );
           },
         ),
       ),

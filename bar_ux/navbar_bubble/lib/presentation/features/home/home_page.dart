@@ -25,6 +25,7 @@ class HomePage extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: 12),
             child: const PlaceholderCardTall(
               height: 200,
+              
             ),
           );
         },
